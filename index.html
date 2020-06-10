@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Sales Order</title>
+</head>
+<body class="m-4" x-data="data()">
+
+<div class="sales-order border border-gray-500 rounded-lg shadow max-w-4xl mx-auto">
+
+  <!-- start of sales order header -->
+  <div class="sales-order-header">
+
+    <div class=" flex items-center px-4 border-b-2 border-gray-700">
+      <div class="flex-auto flex items-center py-2">
+        <img src="https://ali.asiacommerce.net/img/ali-logo-asiacommerce-small.5db1336e.png" alt="" class="w-48 inline-block mr-2">
+        <p class="inline-block text-lg text-gray-700 leading-tight font-s">Sales Order</p>
+      </div>
+      <div class="flex-none text-right leading-tight border-l border-gray-600 pl-4 py-2">
+        <strong>Order ID</strong>
+        <p class="text-2xl font-bold">059213</p>
+      </div>
+    </div>
+    
+    <div class="flex flex-wrap mx-2 py-4 text-lg">
+      <div class="flex-none leading-tight mx-4 my-1">
+        <p>
+          <span class="block text-sm text-gray-700">From </span>
+          China
+        </p>
+      </div>
+      <div class="flex-none leading-tight mx-4 my-1">
+        <p>
+          <span class="block text-sm text-gray-700">Destination </span>
+          Indonesia
+        </p>
+      </div>
+      
+      <div class="flex-none leading-tight mx-4 my-1">
+        <p>
+          <span class="block text-sm text-gray-700">Shipping method </span>
+          Ocean cargo
+        </p>
+      </div>
+      
+      <div class="flex-none leading-tight mx-4 my-1">
+        <p>
+          <span class="block text-sm text-gray-700">Type </span>
+          Import
+        </p>
+      </div>
+      
+      <div class="flex-none leading-tight mx-4 my-1">
+        <p>
+          <span class="block text-sm text-gray-700">Term </span>
+          FOB
+        </p>
+      </div>
+      
+      <div class="flex-none leading-tight mx-4 my-1">
+        <p>
+          <span class="block text-sm text-gray-700">Container </span>
+          LCL
+        </p>
+      </div>
+      
+      <div class="flex-auto text-right mx-4 self-center">
+        <button class="px-4 py-2 rounded bg-orange-500 text-white border border-orange-500 font-semibold hover:bg-orange-600 hover:border-orange-600 w-full sm:inline-block">
+          Pay now
+        </button>
+      </div>
+      
+    </div>
+    
+    
+  </div>
+  <!-- end of sales order header -->
+
+  <!-- start of sales order body -->
+  <div class="sales-order-body border-t-4 border-b-4 border-gray-700 p-4">
+      
+    <div class="flex -px-2 border-b-2 border-gray-600 pb-4 -mx-2">
+      <div class="w-1/2 px-2 sales-order-billing">
+        <strong class="uppercase text-gray-600">Billing info:</strong>
+        
+        <div class="flex flex-wrap sm:flex-no-wrap py-1">
+          <div class="flex-none text-gray-600 sales-order-billing-label w-full sm:w-20">
+            Name:
+          </div>
+          <div class="flex-auto">
+            PT. Datascript
+          </div>
+        </div>
+        
+        <div class="flex flex-wrap sm:flex-no-wrap py-1">
+          <div class="flex-none text-gray-600 sales-order-billing-label w-full sm:w-20">
+            Address:
+          </div>
+          <div class="flex-auto">
+            JL. SELAPARANG B-15 KAV.9, GUNUNG SAHARI SELATAN, KEMAYORAN, JAKARTA PUASAT
+            <br>
+            10610
+          </div>
+        </div>
+        
+        <div class="flex flex-wrap sm:flex-no-wrap py-1">
+          <div class="flex-none text-gray-600 sales-order-billing-label w-full sm:w-20">
+            Phone:
+          </div>
+        </div>
+        
+        <div class="flex flex-wrap sm:flex-no-wrap py-1">
+          <div class="flex-none text-gray-600 sales-order-billing-label w-full sm:w-20">
+            Fax:
+          </div>
+        </div>
+      </div>
+      
+      <div class="w-1/2 px-2 sales-order-billing">
+        <strong class="uppercase text-gray-600">Shipping info:</strong>
+        
+        <div class="flex flex-wrap sm:flex-no-wrap py-1">
+          <div class="flex-none text-gray-600 sales-order-billing-label w-full sm:w-20">
+            Name:
+          </div>
+          <div class="flex-auto">
+            PT. Datascript
+          </div>
+        </div>
+        
+        <div class="flex flex-wrap sm:flex-no-wrap py-1">
+          <div class="flex-none text-gray-600 sales-order-billing-label w-full sm:w-20">
+            Address:
+          </div>
+          <div class="flex-auto">
+            JL. SELAPARANG B-15 KAV.9, GUNUNG SAHARI SELATAN, KEMAYORAN, JAKARTA PUASAT
+            <br>
+            10610
+          </div>
+        </div>
+        
+        <div class="flex flex-wrap sm:flex-no-wrap py-1">
+          <div class="flex-none text-gray-600 sales-order-billing-label w-full sm:w-20">
+            Phone:
+          </div>
+        </div>
+        
+        <div class="flex flex-wrap sm:flex-no-wrap py-1">
+          <div class="flex-none text-gray-600 sales-order-billing-label w-full sm:w-20">
+            Fax:
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div>
+      <div class="flex -mx-4 mt-4 mb-2">
+        <div class="flex-none leading-tight mx-4">
+          <p>
+            <span class="block text-gray-700">
+              Est. total weight
+            </span>
+            <strong class="text-gray-900 sm:text-lg">
+              2.43 Kgs
+            </strong>
+          </p>
+        </div>
+        
+        <div class="text-right sm:text-left flex-auto sm:flex-none leading-tight mx-4">
+          <span class="block text-gray-700">
+            Est. total volume
+          </span>
+          <strong class="text-gray-900 sm:text-lg">
+            0.7 CBM
+          </strong>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- end of sales order body -->
+
+  <!-- start of sales order footer -->
+  <div class="sales-order-footer border-t-4 border-gray-600 py-1 sm:py-4">
+    <div class="sales-order-products px-2 py-2">
+      <div class="sales-order-products-header bg-gray-800 text-white font-semibold px-2 -px-2 pt-1 rounded-t flex">
+        <div class="text-sm sm:hidden">
+          Product list
+        </div>
+        <div class="sales-order-products-name hidden sm:block">
+          Product
+        </div>
+        <div class="sales-order-products-price hidden sm:block">
+          Price
+        </div>
+        <div class="sales-order-products-qty hidden sm:block">
+          Qty
+        </div>
+        <div class="sales-order-products-subtotal hidden sm:block">
+          Subtotal
+        </div>
+
+      </div>
+
+      <div class="sales-order-products-body" >
+        <template x-for="(item, idx) in products" :key="idx">
+          <div class="sales-order-products-item flex px-2 py-3 -px-2">
+            <div class="sales-order-products-name flex">
+              <div class="w-10 h-10 bg-cover flex-none" :style="`background-image: url(${item.image})`">
+                
+              </div>
+              <div class="ml-2 leading-tight text-sm sm:text-base">
+                <p x-text="item.product"></p>
+                <div class="flex mt-1 sm:hidden mt-1">
+                  <div class="flex-auto">
+                    <p>
+                      <span class="text-gray-600">Price:</span>
+                      <span class="" x-text="item.price">
+                      </span>
+                    </p>
+                    <p>
+                      <span class="text-gray-600">Quantity:</span>
+                      <span class="" x-text="item.qty">
+                      </span>
+                    </p>
+                  </div>
+                  <div class="flex-none text-right">
+                    <p>
+                      <span class="text-gray-600">Subtotal:</span>
+                      <span class="" x-text="item.subtotal">
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sales-order-products-price hidden sm:block" x-text="item.price">
+            </div>
+            <div class="sales-order-products-qty hidden sm:block" x-text="item.qty">
+            </div>
+            <div class="sales-order-products-subtotal hidden sm:block" x-text="item.subtotal">
+            </div>
+              
+  
+          </div>
+        </template>
+      </div>
+
+      
+      <div class="text-sm sm:text-base font-semibold sm:font-normal">
+        <div class="flex items-center sm:text-right text-gray-900 py-2 bg-gray-100 px-2">
+          <div class="flex-auto pr-4">
+            Total goods cost : 
+          </div>
+          <div class="flex-none w-40 sm:w-64 text-right">
+            IDR <span x-text="totalGoodCost"></span>
+          </div>
+        </div>
+        <div class="flex items-center sm:text-right text-gray-900 py-2 bg-gray-100 px-2">
+          <div class="flex-auto pr-4">
+            Total Logistic All-in : 
+          </div>
+          <div class="flex-none w-40 sm:w-64 text-right">
+            IDR <span x-text="totalLogisticAll"></span>
+          </div>
+        </div>
+        <div class="flex items-center sm:text-right text-gray-600 py-2 px-2 italic">
+          <div class="flex-auto pr-4">
+            Custom charge : 
+          </div>
+          <div class="flex-none w-40 sm:w-64 text-right">
+            IDR <span x-text="customCharge"></span>
+          </div>
+        </div>
+        <div class="flex items-center sm:text-right text-gray-600 py-2 px-2 italic">
+          <div class="flex-auto pr-4">
+            Estimate Weight Charge (kg) : 
+          </div>
+          <div class="flex-none w-40 sm:w-64 text-right">
+            IDR <span x-text="estWeightCharge"></span>
+          </div>
+        </div>
+        <div class="flex items-center sm:text-right text-gray-600 py-2 px-2 italic">
+          <div class="flex-auto pr-4">
+            Handling Charge :
+          </div>
+          <div class="flex-none w-40 sm:w-64 text-right">
+            IDR <span x-text="handlingCharge"></span>
+          </div>
+        </div>
+        <div class="flex items-center sm:text-right text-gray-600 py-2 px-2 italic">
+          <div class="flex-auto pr-4">
+            Estimate China Domestic Shipping  :
+          </div>
+          <div class="flex-none w-40 sm:w-64 text-right" x-text="estChinaDomesticShipping">
+          </div>
+        </div>
+        <div class="flex items-center sm:text-right text-gray-900 py-2 bg-gray-100 px-2">
+          <div class="flex-auto pr-4">
+            Grand Total : 
+          </div>
+          <div class="flex-none w-40 sm:w-64 text-right">
+            IDR <span x-text="grandTotal"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of sales order footer -->
+
+</div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
+
+  <script>
+
+    function data() {
+      return {
+        products : [
+          {
+            "qty": 6,
+            "image": "https://cbu01.alicdn.com/img/ibank/2019/051/869/10341968150_304524601.jpg",
+            "product": "Smart indoor planting garden soilless cultivation plastic flower pot creative lazy hydroponic green vegetable LED table lamp",
+            "price": "1,998,780.00",
+            "subtotal": "11,992,680.00",
+          }, {
+            "qty": 8,
+            "image": "http://cbu01.alicdn.com/img/ibank/2018/532/084/8988480235_1729833600.jpg_800x800q80.jpg",
+            "product": "H smooth buckle belt men's letter buckle belt explosions supply spot belts Tmall Taobao many generations",
+            "price": "615,960.00",
+            "subtotal": "4,927,680.00",
+          }, {
+            "qty": 2,
+            "image": "http://cbu01.alicdn.com/img/ibank/2019/839/582/11878285938_776884694.jpg_800x800q80.jpg",
+            "product": "MacBookAir/Pro Cover 11/12/13 Inch Scrub Notebook Sleeve for Apple Computer Bag",
+            "price": "84,800.00",
+            "subtotal": "169,600‬.00",
+          }, {
+            "qty": 36,
+            "image": "https://cbu01.alicdn.com/img/ibank/2019/181/986/11430689181_1517774229.jpg",
+            "product": "Explosion models infants and young children electric induction spray ball toy light music playing in the water bath toy baby bath",
+            "price": "144,450.00",
+            "subtotal": "5,200,200.00",
+          }
+        ],
+        totalGoodCost: "22,290,160‬.00",
+        totalLogisticAll: "4,423,072.95",
+        customCharge: "404,211.95",
+        estWeightCharge: "3,877,500.00",
+        handlingCharge: "141,361.00",
+        estChinaDomesticShipping: "( Calculate Later )",
+        grandTotal: "26,713,232.95‬"
+      }
+    } 
+  </script>
+
+</body>
+</html>

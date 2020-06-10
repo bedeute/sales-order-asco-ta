@@ -1,0 +1,28 @@
+.sales-order-products {
+  &-item {
+    border: 1px solid;
+    border-color: transparent transparent #a0aec0 transparent;
+  }
+    
+  &-name {
+    flex: 1 1 auto;
+    padding-right: 1rem;
+  }
+  
+  &-price {
+    width: 100px;
+    flex: none;
+  }
+  
+  &-qty {
+    width: 60px;
+    flex: none;
+    padding-left: 1rem;
+  }
+  
+  &-subtotal {
+    width: 100px;
+    flex: none;
+    text-align: right;
+  }
+}
